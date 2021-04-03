@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/addPicIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="156dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="154dp"
+            app:srcCompat="@drawable/ic_add_pic_iv" />
+
+        <TextView
+            android:id="@+id/addTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="311dp"
+            android:layout_marginBottom="473dp"
+            android:text="@string/addTitledesc"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/descEditText"
+            android:layout_marginBottom="58dp"
+            android:drawableStart="@drawable/ic_edittext_icon"
+            android:hint="Pasta"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/addDesc"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="241dp"
+            android:layout_marginBottom="371dp"
+            android:text="@string/addDesc"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/descEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/priceEditText"
+            android:layout_marginBottom="58dp"
+            android:drawableStart="@drawable/ic_edittext_icon"
+            android:hint="564cal, New recipe"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/addPrice"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="241dp"
+            android:layout_marginBottom="266dp"
+            android:text="@string/addPrice"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/priceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="216dp"
+            android:drawableStart="@drawable/ic_price_icon"
+            android:hint="$8.50"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/addToMenuBtn"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="135dp"
+            android:layout_marginEnd="134dp"
+            android:layout_marginBottom="111dp"
+            android:gravity="center"
+            android:text="@string/addToMenuBtn" />
+    </RelativeLayout>
+
+</LinearLayout>
